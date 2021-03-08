@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<style>
+*{
+margin: 0px;
+padding: 0px;
+box-sizzling: border-box;
+font-family: Arial,san-serif;
+}
+body{
+background-image: url(1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+nav{
+background: #222222;
+padding: 10px 40px 10px 70px;
+border: 1px solid #000;
+border-left: none;
+border-right: none;
+}
+nav ul{
+display: flex;
+list-style: none;
+flex-wrap: wrap;
+align-item: center;
+justify-content: center;
+}
+nav ul li.logo{
+flex: 1;
+font-size: 30px;
+font-weight: 700;
+}
+nav ul div.item{
+padding: 0px 25px;
+display: inline-flex;
+}
+nav ul div.item a {
+text-decoration: none;
+font-size: 18px;
+padding: 0px 12px;
+color: #fff;
+}
+nav li.search{
+height: 40px;
+width: 240px;
+display: flex;
+background: #f2f2f2;
+border-radius: 5px;
+}
+nav li.search input{
+height: 100%;
+width: 500px;
+border: none;
+outline: none;
+padding: 0px 10px;
+color: #000;
+font-size: 18px;
+border-radius: 5px 0px 5px;
+}
+.melk{
+text-align: center;
+margin-top: 300px;
+}
+footer{
+padding: 10px;
+font-size: 17px;
+font-size: bold;
+text-align: center;
+background-color: #594848;
+color: white;
+font-family: Arial;
+letter-spacing: 1px;
+}
+#slider{
+overflow: hidden;
+}
+#slider figure{
+position: relative;
+width: 500%;
+margin: 0;
+left: 0;
+animation: 60s slider infinite;
+}
+#slider figure img{
+width: 20%;
+height: 460px;
+float: left;
+}
+@keyframes slider{
+0%{
+left: 0;
+}
+20% {
+left: 0;
+}
+25%{
+left: -100%;
+}
+45%{
+left: -100%;
+}
+50%{
+left: -200%;
+}
+70%{
+left: 200%;
+}
+75%{
+left: -300%;
+}
+95%{
+left: -300%;
+}
+45%{
+left: -400%;
+}
+}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+<li class="logo" style="color: #fff">KENYA POLICE</li>
+<div class="item">
+<li><a href="welcome.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="display.php" target="blank">DISPLAY</a></li>
+<li><a href="add.php">ADD CRIMINAL</a></li>
+</div>
+<li>
+    <form action="search.php" method="POST">
+<div class="search">
+<input type="search" name="fname" placeholder="search">
+<input type="submit" name="search" value="search">
+</form>
+</li>
+</ul>
+</nav>
+<div id="slider">
+    <figure>
+    <img src="images/pexels-sourav-mishra-2710043.jpg">
+    <img src="images/roland-denes-QEzNjayp3hc-unsplash.jpg">
+    <img src="images/david-blume-Iq_pajleEYM-unsplash.jpg">
+    <img src="images/paul-hoenhorst-mdxuY1zozno-unsplash.jpg">
+    <img src="images/hakon-sataoen-qyfco1nfMtg-unsplash.jpg">
+    </figure>
+    </div>    
+<footer>
+    MELK TECH COMPANY
+</footer>
+</body>
+</html>
